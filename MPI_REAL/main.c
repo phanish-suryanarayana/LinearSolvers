@@ -61,7 +61,7 @@ int main(int argc, char ** argv)
     t1 = MPI_Wtime();
     if (!rank) printf("\n*************************************************************************** \n\n"); 
     
-    // Deallocate_memory(system);
+    Deallocate_memory(system);
     
     t_end = MPI_Wtime(); 
     if (!rank) {
