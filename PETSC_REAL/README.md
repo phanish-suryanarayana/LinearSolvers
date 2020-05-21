@@ -9,12 +9,12 @@ This code is for solving **real-valued** systems of equations using the AAR meth
 3. Output file : "test.out" - prints number of processors used, input parameters, time taken by the solver.
 
 4. Parameters in the command line
-    *pc         - 0 or 1 indicates use of Jacobi or Block-Jacobi preconditioning respectively
-    *solver_tol - convergence tolerance for the solver
-    *m          - solver parameter (history)
-    *p          - solver parameter (frequency of Anderson extrapolation, if p_aar=1, then it is AR)
-    *omega      - solver parameter (Richardson relaxation)
-    *beta       - solver parameter (Anderson relaxation) (no beta for PGR and PL2R, any number in input is fine)
+    +pc         - 0 or 1 indicates use of Jacobi or Block-Jacobi preconditioning respectively
+    +solver_tol - convergence tolerance for the solver
+    +m          - solver parameter (history)
+    +p          - solver parameter (frequency of Anderson extrapolation, if p_aar=1, then it is AR)
+    +omega      - solver parameter (Richardson relaxation)
+    +beta       - solver parameter (Anderson relaxation) (no beta for PGR and PL2R, any number in input is fine)
     
 5. Running the code: (e.g. for 8 processors)
 
