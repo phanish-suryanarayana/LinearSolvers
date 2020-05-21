@@ -10,16 +10,17 @@ This code is for solving **real-valued** systems of equations using the AAR meth
     If no output files needed, delete the -log_summary in the command line.
 
 4. Parameters needs to be entered in the command line
-    solver_tol - convergence tolerance for the solver
-    m          - solver parameter (history)
-    p          - solver parameter (frequency of Anderson extrapolation, if p_aar=1, then it is AR)
-    omega      - solver parameter (Richardson relaxation)
-    beta       - solver parameter (Anderson relaxation) (no beta for PGR and PL2R, any number in input is fine)
+    + solver_tol - convergence tolerance for the solver
+    + m          - solver parameter (history)
+    + p          - solver parameter (frequency of Anderson extrapolation, if p_aar=1, then it is AR)
+    + omega      - solver parameter (Richardson relaxation)
+    + beta       - solver parameter (Anderson relaxation)
     
 5. Running the code: (e.g. for 8 processors)
-        % mpirun -n 8 ./mpi_real tol m p omega beta
+        
+    mpirun -n 8 ./mpi_real tol m p omega beta
             
-        `mpirun -n 8 ./mpi_real 1e-6 13 11 1.0 0.9 -log_summary>test.out`
+    `mpirun -n 8 ./mpi_real 1e-6 13 11 1.0 0.9 -log_summary>test.out`
 	   
 6. The executable (mpi_real) is created in the root directory and the source code is in main.c system.c(.h) tools.c(h) AAR.c(.h)
 
