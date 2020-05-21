@@ -2,7 +2,7 @@
 
 This code is for solving **real-valued** systems of equations using the AAR method, with the Poisson equation provided as an example.  
 
-1. Modules required to compile the code:intel/19.0.3, mvapich2/2.3.1, petsc/3.11.3 **(must without Complex configuration)**
+1. Modules required to compile the code:intel, mvapich2, petsc **(must without Complex configuration)**
 
 2. Compile the code by typing "make" in the root directory $PETSC_REAL.
     
