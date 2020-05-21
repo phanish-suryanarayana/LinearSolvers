@@ -1,8 +1,8 @@
 # LinearSolvers
 
-Collection of solvers for linear systems of equations. 
+Collection of solvers for linear systems of equations for both serial and parallel computations. 
 
-Currently, you can find the Alternating Anderson Richardson (AAR) method \[1,2\] implemented in Matlab, PETSc, and standalone C w/ MPI code. Additional details can be found in the README file with each subfolder.
+Currently, you can find the Alternating Anderson Richardson (AAR) method \[1,2\] implemented in Matlab, PETSc, and standalone C w/ MPI code. Additional details can be found in the README file with each subfolder. Users of the code are expected to cite one of the references below. 
 
 **References**
 
