@@ -2,7 +2,7 @@
 
 This code is for solving **complex-valued** systems of equations using the AAR method, with the Helmholtz equation provided as an example.  
 
-1. Modules required to compile the code:intel/19.0.3, mvapich2/2.3.1, mkl/11.2, petsc/3.11.3 **(must with complex configuration)**
+1. Modules required to compile the code:intel/19.0.5, mvapich2/2.3.2, petsc/3.12.2 **(must with complex configuration)**
 
 2. Compile the code by typing "make" in the root directory $PETSC_COMPLEX.
     
