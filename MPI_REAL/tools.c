@@ -90,7 +90,7 @@ void PseudoInverseTimesVec(double **A, double *b, double *x, int m)
         s = 0.0; 
         for (jj = 0; jj < m; jj++) 
             s +=  V[j][jj]*tmp[jj]; 
-            x[j] = s; 
+        x[j] = s; 
     }
 
     // de-allocate memory

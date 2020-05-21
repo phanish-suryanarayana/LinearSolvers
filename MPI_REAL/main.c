@@ -16,8 +16,7 @@ int main(int argc, char ** argv)
 {
     MPI_Init(&argc, &argv); 
     int rank, size, i, j, max_layer = 0, no_nodes, no_tests;
-    double t_begin, t_end, t0, t1; 
-    FILE *fp;
+    double t_begin, t_end; 
 
     MPI_Comm_rank(MPI_COMM_WORLD, &rank); 
     MPI_Comm_size(MPI_COMM_WORLD, &size); 
@@ -56,9 +55,9 @@ int main(int argc, char ** argv)
         system->phi[i] = 1;
 
     if (!rank) printf("AAR starts.\n"); 
-    t0 = MPI_Wtime();
+
     AAR(system, Lap_Vec_mult, Precondition, -1.0/(4*M_PI), system->phi, system->rhs, system->omega, system->beta, system->m, system->p, system->solver_maxiter, system->solver_tol, no_nodes, system->comm_laplacian);  
-    t1 = MPI_Wtime();
+    
     if (!rank) printf("\n*************************************************************************** \n\n"); 
     
     Deallocate_memory(system);

@@ -3,7 +3,12 @@ all: mpi_real
 CC = mpicc
 
 # CFLAGS = -O3 -funroll-loops -g -Wall -DDEBUG
-CFLAGS = -O3 -funroll-loops -g -Wall
+
+# if using gcc
+CFLAGS = -O3 -funroll-loops -g -Wall -lm
+
+# if using intel, please use this CFLAGS
+# CFLAGS = -O3 -funroll-loops -g -Wall
 
 # SOURCEC = main.c system.c AAR.c tools.c
 OBJSC = main.o system.o AAR.o tools.o

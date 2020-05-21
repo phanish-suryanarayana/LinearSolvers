@@ -22,6 +22,8 @@ This code is for solving **real-valued** systems of equations using the AAR meth
 
     `mpirun -np 64 ./petsc_real 0 1e-6 13 11 1.0 0.9 -log_summary>test.out`
 	   
-(6) The executable (petsc_real) is created in the root directory and the source code is in main.c system.c(.h) tools.c(h) AAR_Real.c(.h)
+6. The executable (petsc_real) is created in the root directory and the source code is in main.c system.c(.h) tools.c(h) AAR_Real.c(.h)
 
+7. If you want to use the DDEBUG mode to print out more information, please add -DDEBUG in the CFLAGS. 
 
+8. If you are using PETSC/3.5 (or lower version), please change the 2 *include* option in makefile. FYI, the developer used intel/19.0.3, mvapich2/2.3.1 and petsc/3.11.3-mva2 modules. Please don't use the complexed version of petsc!

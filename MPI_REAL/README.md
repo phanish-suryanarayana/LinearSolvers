@@ -2,7 +2,7 @@
 
 This code is for solving **real-valued** systems of equations using the AAR method, with the Poisson equation provided as an example. 
 
-1. Code tested using mvapich2/2.1 and intel/19.0 compilers for MPI and C/C++. 
+1. Code tested using mvapich2 and gcc compilers for MPI and C/C++. 
 
 2. Compile the code by typing "make" in the root directory $MPI_REAL.
     
@@ -25,3 +25,7 @@ This code is for solving **real-valued** systems of equations using the AAR meth
 6. The executable (mpi_real) is created in the root directory and the source code is in main.c system.c(.h) tools.c(h) AAR.c(.h)
 
 7. Users should define their own Lap_Vec_mult and Precondition function.
+
+8. If you want to use the DDEBUG mode to print out more information, please add -DDEBUG in the CFLAGS. 
+
+9. If you want to use intel instead of gcc module, you should change the CFLAGS in the makefile. The developer used gcc/8.0.3 and intel/19.0.5.
