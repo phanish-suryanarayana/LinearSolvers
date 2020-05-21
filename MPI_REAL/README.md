@@ -28,4 +28,4 @@ This code is for solving **real-valued** systems of equations using the AAR meth
 
 8. If you want to use the DDEBUG mode to print out more information, please add -DDEBUG in the CFLAGS. 
 
-9. If you want to use intel instead of gcc module, you should change the CFLAGS in the makefile. The developer used gcc/8.0.3 and intel/19.0.5.
+9. If you want to use intel instead of gcc module, you should change the CFLAGS in the makefile. FYI, the developer used gcc/8.0.3 and intel/19.0.5.
