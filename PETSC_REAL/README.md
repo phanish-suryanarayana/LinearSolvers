@@ -1,4 +1,4 @@
-#Instructions to run the Petsc_Real code:
+# Instructions to run the Petsc_Real code:
 
 This code is for solving **real-valued** systems of equations using the AAR method, with the Poisson equation provided as an example.  
 
